@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "description": "Redux store enhancer for synchronizing states and actions across store instances",
   "main": "index.js",
-  "author": "lukashedegaard, pehnen",
+  "authors": [
+    "Lukas Hedegaard <lxhdgd@gmail.com> (https://github.com/LukasHedegaard)",
+    "Andreas Pehn Sloth <aito@aito.nu> (https://github.com/pehnen)"
+  ],
   "keywords": [
     "Redux",
     "Action",
