@@ -1,0 +1,51 @@
+{
+  "name": "@garblovians/redux-blabber",
+  "version": "0.1.0",
+  "description": "Redux store enhancer for synchronizing states and actions across store instances",
+  "main": "index.js",
+  "author": "LukasHedegaard, pehnen",
+  "keywords": [
+    "Redux",
+    "Action",
+    "Store",
+    "Sync",
+    "Synchronization",
+    "Middleware",
+    "Store Enhancer",
+    "Rx",
+    "RxJS",
+    "Observables",
+    "Observable",
+    "ES6",
+    "ES2015",
+    "Typescript"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:garblovians/redux-blabber.git"
+  },
+  "scripts": {
+    "build": "tsc --watch",
+    "test": "jest --verbose"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "redux": "^3.7.2",
+    "yeast": "^0.1.2"
+  },
+  "devDependencies": {
+    "@reactivex/rxjs": "^5.4.3",
+    "@types/jest": "^21.1.1",
+    "@types/lodash": "^4.14.87",
+    "@types/node": "^8.0.32",
+    "@types/redux": "^3.6.0",
+    "@types/redux-mock-store": "^0.0.11",
+    "@types/rx": "^4.1.1",
+    "jest": "^21.2.1",
+    "redux-logger": "^3.0.6",
+    "redux-mock-store": "^1.3.0",
+    "redux-thunk": "^2.2.0",
+    "rxjs": "^5.5.3"
+  }
+}
