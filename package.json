@@ -5,7 +5,7 @@
   "main": "index.js",
   "authors": [
     "Lukas Hedegaard <lxhdgd@gmail.com> (https://github.com/LukasHedegaard)",
-    "Andreas Pehn Sloth <aito@aito.nu> (https://github.com/pehnen)"
+    "Andreas Pehn Sloth <andreas@aito.nu> (https://github.com/pehnen)"
   ],
   "keywords": [
     "Redux",
