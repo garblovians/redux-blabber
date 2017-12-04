@@ -1,5 +1,5 @@
 {
-  "name": "@garblovians/redux-blabber",
+  "name": "redux-blabber",
   "version": "0.1.0",
   "description": "Redux store enhancer for synchronizing states and actions across store instances",
   "main": "index.js",
