@@ -112,16 +112,14 @@ const slaveMockReducer = createMockReducer(
   (s) => { slaveStatesReceived.push(s) }
 )
 
-const slaveEnhancer = compose(
-  syncEnhancer({
-    receive$: subject,
-    transmit$: subject,
-    predicate: actionFilter,
-    hydrationMap: hydrationMap,
-    isMaster: false,
-    createUUID: () => 'syncUUID2',
-  }),
-)
+const slaveEnhancer = syncEnhancer({
+  receive$: subject,
+  transmit$: subject,
+  predicate: actionFilter,
+  hydrationMap: hydrationMap,
+  isMaster: false,
+  createUUID: () => 'syncUUID2',
+})
 
 const slaveStore = createStore(slaveMockReducer, slaveEnhancer)
 

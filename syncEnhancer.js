@@ -36,7 +36,6 @@ function syncEnhancer({ receive$, transmit$, predicate = a => true, hydrationMap
             }
             else if (action.type === hydrateOn.type) {
                 transmit(hydration_1.hydrationRequest());
-                console.log("rehydrate!");
             }
             else {
                 transmit(action);
@@ -50,8 +49,8 @@ function syncEnhancer({ receive$, transmit$, predicate = a => true, hydrationMap
                 }
             }
         };
-        const receiveError = (err) => { console.log("syncEnhancer received error: "); console.log(err); };
-        const receiveComplete = () => { console.log("syncEnhancer received complete"); };
+        const receiveError = (err) => { }; //console.log("syncEnhancer received error: "); console.log(err) }
+        const receiveComplete = () => { }; //console.log("syncEnhancer received complete") }
         receive$.subscribe(receive, receiveError, receiveComplete);
         return Object.assign({}, store, { dispatch });
     };

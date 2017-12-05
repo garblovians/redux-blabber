@@ -99,7 +99,6 @@ export default function syncEnhancer<S>(
         transmit(hydrationReplyAction)
       } else if(action.type === hydrateOn.type){
         transmit(hydrationRequest())
-        console.log("rehydrate!");
       } else {
         transmit(action)
       }
@@ -113,8 +112,8 @@ export default function syncEnhancer<S>(
         }
       }
     }
-    const receiveError = (err) => { console.log("syncEnhancer received error: "); console.log(err) }
-    const receiveComplete = () => { console.log("syncEnhancer received complete") }
+    const receiveError = (err) => { } //console.log("syncEnhancer received error: "); console.log(err) }
+    const receiveComplete = () => { } //console.log("syncEnhancer received complete") }
     
     receive$.subscribe(
       receive,

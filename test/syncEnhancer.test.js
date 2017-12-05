@@ -61,14 +61,14 @@ let masterStore = redux_1.createStore(masterMockReducer, masterEnhancer);
 let slaveActionsReceived = new Array();
 let slaveStatesReceived = new Array();
 const slaveMockReducer = mockReducer_1.default((a) => { slaveActionsReceived.push(a); }, (s) => { slaveStatesReceived.push(s); });
-const slaveEnhancer = redux_1.compose(syncEnhancer_1.default({
+const slaveEnhancer = syncEnhancer_1.default({
     receive$: subject,
     transmit$: subject,
     predicate: actionFilter,
     hydrationMap: hydrationMap,
     isMaster: false,
     createUUID: () => 'syncUUID2',
-}));
+});
 const slaveStore = redux_1.createStore(slaveMockReducer, slaveEnhancer);
 /*********************************************************
  * Test
