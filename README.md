@@ -92,8 +92,8 @@ const slaveState = {
   fum: 'local'
 }
 ```
-where only fields 'fee' and 'fo' will be syncronized as the hydrate() action is dispatched on the store.
-Note that the supplied hydration maps must contain the same keys (otherwise, hydration for the field will be discarded), but that their state paths are flexible as in the 'slice2' example using the lodash [set](https://lodash.com/docs/4.17.4#set) path syntax. An empty string as value, will sync the whole store.
+Only the fields 'fee' and 'fo' will be syncronized as the hydrate() action is dispatched on the store.
+Note that the supplied hydration maps must contain the same keys (otherwise, hydration for the field will be discarded), but that their state paths are flexible as in the 'slice2' example. The path is specified using the lodash [set](https://lodash.com/docs/4.17.4#set) path syntax. An empty string as path will sync the whole store.
 
 ### Action syncs
 
