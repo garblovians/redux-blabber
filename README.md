@@ -7,7 +7,7 @@ Blabber is designed to make stores talk to each other. The idea is to synchroniz
 
 In other words: It makes the redux store blabber on about what is happening.
 
-It uses [Observable](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html) and [Observers](http://reactivex.io/rxjs/class/es6/MiscJSDoc.js~ObserverDoc.html) to communicate and therefore supports synchronization through anything that implements their interfaces.
+It uses [Observables](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html) and [Observers](http://reactivex.io/rxjs/class/es6/MiscJSDoc.js~ObserverDoc.html) to communicate and therefore supports synchronization through anything that implements their interfaces.
 
 ## Getting Started
 
@@ -52,7 +52,6 @@ const masterStore = createStore(masterReducer, masterEnhancer)
 
 // SLAVE SETUP
 
-// Add other middleware 
 const slaveEnhancer = blabberEnhancer({
   receive$:     stream2, //inverted order of streams
   transmit$:    stream1,      
